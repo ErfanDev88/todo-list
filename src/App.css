@@ -1,0 +1,104 @@
+.container {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.header h1 {
+  font-size: 30px;
+  color: #e2e2e2;
+  font-weight: 700;
+}
+
+.addNote {
+  display: flex;
+  column-gap: 20px;
+}
+
+.addNote input{
+  padding: 8px 12px;
+  border: 0.5px solid #e5e5e578;
+  border-radius: 10px;
+  color: #e1e1e1;
+  background: transparent;
+  font-weight: 300;
+}
+.addNote input:focus{
+  outline: none;
+}
+
+.addBtn{
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: #e2e2e2;
+  font-weight: 400;
+  background: #292929;
+  border: 0.5px solid #131313be;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.addBtn:hover{
+  background: #232323;
+}
+
+.noteContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.noteNumbers{
+  font-size: 15px;
+  color: #e1e1e1;
+  font-weight: 300;
+}
+
+.note{
+  max-width: 310px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #232323;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+.note h1{
+  max-width: 115px;
+  word-wrap: break-word; 
+  font-size: 18px;
+  color: #e2e2e2;
+  font-weight: 500;
+}
+
+.note .btnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+
+.note button{
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #e2e2e2;
+  font-weight: 400;
+  background: #292929;
+  border: 0.5px solid #13131394;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.note button:hover{
+  background: #232323;
+}
