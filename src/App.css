@@ -20,11 +20,14 @@
 }
 
 .addNote {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   column-gap: 20px;
 }
 
 .addNote input{
+  width: 80%;
   padding: 8px 12px;
   border: 0.5px solid #e5e5e578;
   border-radius: 10px;
@@ -63,15 +66,29 @@
 }
 
 .note{
-  max-width: 310px;
+  max-width: 340px;
   padding: 10px 20px;
   border-radius: 15px;
   background-color: #232323;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 10px;
 }
+.note .header{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.note span{
+  max-width: 176px;
+  font-size: 13px;
+  color: #e2e2e2e7;
+  font-weight: 100;
+  letter-spacing: 0.4px;
+}
+
 .note h1{
   max-width: 115px;
   word-wrap: break-word; 
@@ -84,21 +101,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 7px;
+  column-gap: 5px;
 }
 
 .note button{
-  padding: 8px 10px;
+  padding: 6px 10px;
   border-radius: 10px;
   color: #e2e2e2;
   font-weight: 400;
   background: #292929;
   border: 0.5px solid #13131394;
-  font-size: 15px;
-  font-weight: 300;
   cursor: pointer;
   transition: all .1s ease-in-out;
 }
 .note button:hover{
   background: #232323;
+}
+.note button svg{
+  color: #e1e1e1 !important;
+  width: 20px;
+  height: 20px;
 }
